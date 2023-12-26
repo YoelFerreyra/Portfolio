@@ -62,6 +62,10 @@ span {
     z-index: 100;
 }
 
+.header.sticky{
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
 .logo{
     font-size: 25px;
     color: #fff;
@@ -467,13 +471,16 @@ span {
 /*skills*/
 
 .skills {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
     align-items: center;
+    margin-bottom: 150px;
 }
 
 .skills .card{
-    width: calc(33% - 20px);
+    width: 100%;
     background: #323946;
     height: 300px ;
     border-radius:  .5rem;
