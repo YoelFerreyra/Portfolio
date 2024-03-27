@@ -28,14 +28,21 @@ body{
     color: var(--text-color);
 }
 
-
-body::-webkit-scrollbar{
-    width: 1rem;
-    background-color: black;
+body::-webkit-scrollbar {
+    width: 1.5rem;
+    background-color: var(--second-bg-color);
 }
 
-body::-webkit-scrollbar-thumb{
-    width: .8rem;
+body::-webkit-scrollbar-track {
+    margin: 0.5rem;
+}
+
+body::-webkit-scrollbar-button {
+    padding: 0.5rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    padding: 0.5rem;
     background: var(--main-color);
     border-radius: 1rem;
 }
@@ -477,7 +484,7 @@ span {
     gap: 20px;
     justify-items: center;
     align-items: center;
-    margin-bottom: 150px;
+    margin-bottom: 1000px;
 }
 
 .skills .card{
