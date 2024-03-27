@@ -484,7 +484,6 @@ span {
     gap: 20px;
     justify-items: center;
     align-items: center;
-    margin-bottom: 1000px;
 }
 
 .skills .card{
@@ -517,6 +516,7 @@ span {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 10rem;
     padding: 2rem 9%;
     background: var(--second-bg-color);
 }
