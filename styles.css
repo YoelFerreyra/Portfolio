@@ -138,6 +138,7 @@ span {
 }
 
 .home-content p {
+    text-wrap: pretty;
     font-size: 16px;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
@@ -160,10 +161,10 @@ span {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #0ef;
+    border: 2px solid var(--main-color);
     border-radius: 50%;
     font-size: 20px;
-    color: #0ef;
+    color: var(--main-color);
     text-decoration: none;
     margin: 30px 15px 30px 0;
     transition: .5s ease;
@@ -174,19 +175,19 @@ span {
 }
 
 .social-media a:hover {
-    background-color: #0ef;
-    color: #1f242d;
-    box-shadow: 0 0 20px #0ef;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 20px var(--main-color);
 }
 
 .btn {
     display: inline-block;
     padding: 12px 28px;
-    background: #0ef;
+    background: var(--main-color);
     border-radius: 40px;
     box-shadow: 0 0 10px var(--main-color);
     font-size: 16px;
-    color: #1f242d;
+    color: var(--bg-color);
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
@@ -481,7 +482,7 @@ span {
 
 .skills .card{
     width: 100%;
-    background: #323946;
+    background: var(--second-bg-color);
     height: 300px ;
     border-radius:  .5rem;
     display: flex;
@@ -490,31 +491,8 @@ span {
     flex-direction: column;
 }
 
-.skills .card .circle {
-    position: relative;
-    height: 150px;
-    width: 150px;
-    border:  8px solid var(--main-color);
-    box-shadow: 0 0 10px var(--main-color);
-    border-radius: 50%;
-}
-
-.card .circle .box,
 .card .circle .box span {
-    position: absolute;
-    top:  50%;
-    left: 50%;    
-}
-
-.card .circle .box {
-    height: 100%;
-    width: 100%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-}
-
-.card .circle .box span {
-    font-size: 3rem;
+    font-size: 6rem;
     font-weight: 600;
     font-family: sans-serif;
     transform: translate(-50%, -50%);
@@ -565,5 +543,4 @@ span {
         bottom: 0;
         left: 0;
         z-index: 100;
-    
 }
