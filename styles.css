@@ -79,8 +79,6 @@ span {
     text-decoration: none;
     font-weight: 600;
     cursor: default;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
 }
 
 .navbar a {
@@ -90,8 +88,8 @@ span {
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
+    left: 0;
     transition: .3s;
-    opacity: 0;
     animation: slideTop .5s ease forwards;
     animation-delay: calc(.2s * var(--i));
 }
@@ -120,8 +118,6 @@ span {
 .home-content h3{
     font-size: 32px;
     font-weight: 700;
-    opacity: 0;
-    animation: slideBottom 1s ease forwards;
     animation-delay: .7s;
 }
 
@@ -131,7 +127,6 @@ span {
 
 .home-content h3:nth-of-type(2){
     margin-bottom: 30px;
-    animation: slideTop 1s ease forwards;
     animation-delay: .7s;
 }
 
@@ -139,25 +134,18 @@ span {
     font-size: 56px;
     font-weight: 700;
     margin: -3px 0;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
     animation-delay: 1s;
 }
 
 .home-content p {
     text-wrap: pretty;
     font-size: 16px;
-    opacity: 0;
-    animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
 }
 
 .home-img img {
     width: 40vw;
     margin-right: -20px;
-    opacity: 0;
-    animation: zoomIn 1s ease forwards, floatImage 4s 
-    ease-in-out infinite;
     animation-delay: 2s, 3s;
 }
 
@@ -175,8 +163,6 @@ span {
     text-decoration: none;
     margin: 30px 15px 30px 0;
     transition: .5s ease;
-    opacity: 0;
-    animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
     animation-delay: calc(.2s * var(--i));
 }
@@ -198,76 +184,7 @@ span {
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
-    opacity: 0;
-    animation: slideTop 1s ease forwards;
     animation-delay: 2s;
-}
-
-@keyframes slideRight {
-    0% {
-        transform: translate(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translate(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideLeft {
-    0% {
-        transform: translate(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translate(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideTop {
-    0% {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideBottom {
-    0% {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes zoomIn {
-    0% {
-        transform: scale(0);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-@keyframes floatImage {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-24px);
-    }
-    100% {
-        transform: translateY(0);
-    }
 }
 
 .about {
@@ -376,7 +293,6 @@ span {
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
-    display: flex;
 }
 
 .portfolio-box img {
@@ -478,6 +394,10 @@ span {
 
 /*skills*/
 
+.skills-container {
+    background-color: var(--second-bg-color);
+}
+
 .skills {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -488,7 +408,7 @@ span {
 
 .skills .card{
     width: 100%;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     height: 300px ;
     border-radius:  .5rem;
     display: flex;
@@ -550,4 +470,105 @@ span {
         bottom: 0;
         left: 0;
         z-index: 100;
+}
+
+/* BREAKPOINTS */
+
+@media (max-width: 1200px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header{
+        padding: 2rem 3%;
+    }
+    section {
+        padding: 10rem 3% 2rem;
+        height: auto;
+    }
+    .services {
+        padding-bottom: 10rem;
+    }
+    .portfolio {
+        padding-bottom: 7rem;
+    }
+    .footer {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+    .home {
+        flex-direction: column;
+    }
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+    .home-content h1 {
+        font-size: 5rem;
+    }
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .about {
+        flex-direction: column-reverse;
+    }
+    .about img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .services h2 {
+        margin-bottom: 3rem;
+    }
+    .portfolio h2 {
+        margin-bottom: 3rem;
+    }
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 617px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+    .skills {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 365px) {
+    .home-img img{
+        width: 90vw;
+    }
+    .about-img img{
+        width: 90vw;
+    }
+    .footer {
+        flex-direction: column-reverse;
+    }
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
 }
