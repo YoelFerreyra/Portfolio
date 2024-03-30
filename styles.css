@@ -274,6 +274,7 @@ span {
 
 .portfolio {
     background: var(--second-bg-color);
+    padding: 10px 10% 0;
 }
 
 .portfolio h2 {
@@ -396,6 +397,7 @@ span {
 
 .skills-container {
     background-color: var(--second-bg-color);
+    padding: 10px 10% 0;
 }
 
 .skills {
