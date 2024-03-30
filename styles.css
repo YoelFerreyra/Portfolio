@@ -48,7 +48,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 section {
-    padding: 70px 10% 0;
+    padding: 10px 10% 0;
     height: 100vh;
 }
 
@@ -274,7 +274,6 @@ span {
 
 .portfolio {
     background: var(--second-bg-color);
-    padding: 10px 10% 0;
 }
 
 .portfolio h2 {
@@ -397,7 +396,6 @@ span {
 
 .skills-container {
     background-color: var(--second-bg-color);
-    padding: 10px 10% 0;
 }
 
 .skills {
