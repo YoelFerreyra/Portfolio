@@ -1,4 +1,3 @@
-
 /*===================== Typing Stack =====================*/
 let typed = new Typed('.typing', {
     strings: ['Web Developer', 'Full Stack Developer', 'Freelancer'],
