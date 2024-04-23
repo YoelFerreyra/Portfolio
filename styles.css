@@ -411,10 +411,6 @@ span {
 
 /* contact */
 
-.contact h2 {
-  margin-bottom: 3rem;
-}
-
 .contact form {
   max-width: 70rem;
   margin: 1rem auto;
@@ -468,6 +464,7 @@ span {
 
 .skills-container .card {
   width: 100%;
+  max-height: 240px;
   background: var(--bg-color);
   height: 300px;
   border-radius: 0.5rem;
@@ -645,10 +642,6 @@ span {
   }
 
   .services h2 {
-    margin-bottom: 3rem;
-  }
-
-  .portfolio h2 {
     margin-bottom: 3rem;
   }
 
