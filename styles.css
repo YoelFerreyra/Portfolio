@@ -300,6 +300,13 @@ span {
   max-height: 220px;
   transition: 0.5s ease;
 }
+.portfolio-links {
+  display: block;
+}
+
+.portfolio-links > *:nth-child(2) {
+  margin-left: 10px;
+}
 
 .portfolio-box:hover img {
   transform: scale(1.1);
