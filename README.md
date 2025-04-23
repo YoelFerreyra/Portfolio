@@ -4,4 +4,4 @@ This is my personal portfolio website, built to showcase my projects, skills, an
 
 Feel free to explore and get in touch!
 
-🔗 [Visit the live site](https://yoelferreyra.github.io/portfolio)
+🔗 [Visit the live site](https://yoelferreyra.github.io/Portfolio)
